@@ -37,7 +37,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const databaseFunction = DatabaseFunction(db);
-const routes = Routes();
+const routes = Routes(databaseFunction);
 
 app.get('/', routes.showHomeScreen);
 app.post('/calc_bill');

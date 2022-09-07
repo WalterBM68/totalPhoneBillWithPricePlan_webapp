@@ -2,6 +2,11 @@
     <form action="/calc_bill" method="POST">
         <h1>Phone bill widget</h1>
         <h2>Calculate total phone bill for user</h2>
+        {{#if messages.info}}
+            <div class="errorMsg" id="validate">
+                <h4> {{messages.info}} </h4>
+            </div>          
+        {{/if}}
         <div class="name">
             <label for="Username">Username</label>
             <input class="username" type="text" name="name" placeholder="Enter your name" value="" />
