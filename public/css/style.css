@@ -1,0 +1,17 @@
+body{
+    font-family: sans-serif;
+}
+.container{
+    background-color: aqua;
+    margin: auto;
+    width: 30%;
+    padding: 0px 5px 0px 5px;
+    height: 230px;
+}
+
+.calculateBtn{
+    margin-left: 56px;
+}
+.name, .string, .total{
+    margin: 11px;
+}
