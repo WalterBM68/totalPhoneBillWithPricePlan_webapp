@@ -1,17 +1,49 @@
 body{
     font-family: sans-serif;
+    background-color: rgb(145, 188, 188);
 }
 .container{
-    background-color: aqua;
+    background-color: rgb(7, 250, 250);
     margin: auto;
     width: 30%;
     padding: 0px 5px 0px 5px;
-    height: 230px;
+    height: 275px;
+}
+.Allocate_user{
+    background-color: rgba(44, 72, 127, 0.836);
+    margin: auto;
+    width: 30%;
+    padding: 0px 5px 0px 5px;
+    height: 200px;
+}
+.pricePlan, .User_with_plan{
+    background-color: rgb(38, 109, 32);
+    margin: auto;
+    width: 27%;
+    padding: 0px 5px 0px 5px;
+    height: 200px; 
 }
 
-.calculateBtn{
-    margin-left: 56px;
+.calculateBtn, .allocation{
+    text-align: center;
 }
-.name, .string, .total{
+.name, .string, .total, .Username, .prices, .allocation{
     margin: 11px;
+}
+.list_price_plans, .Show_users{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+td, th{
+    border: 1px solid;
+    align-items: flex-end;
+    height: 100%;
+}
+table{
+    width: 280px;
+    border-collapse: collapse;
+    font-size: 20px;
 }

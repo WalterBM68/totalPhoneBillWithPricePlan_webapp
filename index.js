@@ -9,7 +9,7 @@ const pgp = pgPromise();
 const Routes = require('./routes');
 const DatabaseFunction = require('./database');
 
-const DATABASE_URL = process.env.DATABASE_URL || 'postgresql://postgres:pg123@localhost:5432/greetings';
+const DATABASE_URL = process.env.DATABASE_URL || 'postgresql://postgres:pg123@localhost:5432/phone_bill';
 const config = {
   connectionString: DATABASE_URL
 }
@@ -41,9 +41,9 @@ const routes = Routes();
 
 app.get('/', routes.showHomeScreen);
 app.post('/calc_bill');
-app.get('/price_plans');
-app.get('/price_plans/:id');
-app.get('/link_user');
+app.get('/price_plans', routes.showPricePlan);
+app.get('/price_plan/:name', routes.usersWithPlan);
+app.get('/link_user', routes.allocatePricePlan);
 app.post('/link_user');
 
 const PORT = process.env.PORT || 2000;
